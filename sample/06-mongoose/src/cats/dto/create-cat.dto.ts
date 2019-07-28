@@ -1,5 +1,7 @@
 export class CreateCatDto {
-  readonly name: string;
-  readonly age: number;
-  readonly breed: string;
+  constructor(
+    public readonly name: string,
+    public readonly age: number,
+    public readonly breed: string,
+  ) {}
 }
